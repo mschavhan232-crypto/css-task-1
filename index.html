@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: "Figtree", sans-serif;
+    }
+    body{
+      background-color: #f4d04e;
+    }
+    .card-container{
+      width : 300px;
+      margin: 6% auto;
+      border: 2px solid black;
+      padding: 15px;
+      font-size: 16px;
+      background-color:#ffffff ;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 13px;
+      border-radius: 10px;
+      box-shadow: 7px 6px 0px 1px rgba(0, 0, 0, 0.4);
+    }
+    .img-box,.img-box img{
+      overflow: hidden;
+      border-radius: 10px;
+      width: 100%;
+    }
+    button{
+      border: none;
+      outline: none;
+      background-color:#f4d04e ;
+      padding: 8.5px;
+      width: 35%;
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: 6px;
+    }
+    p{
+      color: #6b6b6b;
+      font-weight: 500;
+      font-size: 16px;
+    }
+    
+    h2{
+      color :#121212;
+    }
+    .para{
+      text-align: justify;
+    }
+    .user-box{
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 15px;
+    }
+    .user-box img{
+      height:50px ;
+      width:50px ;
+
+    }
+    @media (min-width:576px){
+    .card-container{
+      width: 330px;
+    }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-container">
+ <div class="img-box">
+  <img src="assets/images/illustration-article.svg" alt="">
+ </div>
+ <button>Learning</button>
+ <p>Published 21 Dec 2023</p>
+ <h2>HTML & CSS foundations</h2>
+ <p class="para">These language are backbone of every website, definig structure, content and presentation</p>
+  <div class="user-box">
+   <img src="assets/images/image-avatar.webp">
+   <h3>Greg Hooper</h4>
+  </div>
+</div>
+  
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Mangesh Chavhan</a>.
+  </footer>
+</body>
+</html>
